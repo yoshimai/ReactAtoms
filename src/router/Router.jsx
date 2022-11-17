@@ -8,12 +8,22 @@ export const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/">
-          <DefaultLayout>element={<Top />}</DefaultLayout>
-        </Route>
-        <Route path="/users">
-          <HeaderOnly>element={<Users />}</HeaderOnly>
-        </Route>
+        <Route
+          path="/"
+          element={
+            <DefaultLayout>
+              <Top />
+            </DefaultLayout>
+          }
+        ></Route>
+        <Route
+          path="/users"
+          element={
+            <HeaderOnly>
+              <Users />
+            </HeaderOnly>
+          }
+        ></Route>
       </Routes>
     </BrowserRouter>
   );
