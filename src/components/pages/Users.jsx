@@ -19,9 +19,9 @@ const users = [...Array(10).keys()].map((val) => {
 export const Users = () => {
   return (
     <SContainer>
+      <h2>ユーザー一覧</h2>
+      <SearchInput />
       <SUserArea>
-        <h2>ユーザー一覧</h2>
-        <SearchInput />
         {users.map((user) => (
           <UserCard key={user.id} user={user} />
         ))}
